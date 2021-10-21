@@ -1,11 +1,180 @@
 /* Add your CSS to this file */
 body {
     margin: 0;
-    font-size: 16px;
+    font-size: 18px;
+	font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
 }
 
 .container {
     margin: 0 auto;
     max-width: 960px;
     width: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 960px;
+    width: 100%;
+	display: grid;
+	grid-template-areas:
+	'one one one one one one'
+	'two two two two two two'
+	'three three three three three  three'
+	'four four four four four four'
+	'five five five five five five'
+	'six six six six six six'
+	'seven seven seven seven seven seven'
+	'eight eight eight eight eight eight';
+	grid-gap: 10px;
+	padding: 10px;
+}
+
+header.container{
+	grid-area:one;
+}
+.overview-hero{
+	grid-area:two;
+}
+
+.learn-about{
+	grid-area:four;
+}
+
+.learn-about h2 {
+	font-size: 24px;
+	color: #48BB78;	
+}
+
+.cards{
+	overflow: hidden;
+	display: flex;
+}
+
+.card{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	text-align: centre;
+	column-gap: 20px;
+}
+
+.card {
+	display: block;
+	border: 2px solid #E2E8F0;
+	border-radius: 5px;
+	box-shadow: 2px 2px #E2E8F0;
+	padding: 10px;
+	flex: 2;
+	flex-wrap: wrap;
+}
+
+img{
+	width: 100%;
+	height: auto;
+	object-fit: contain;
+	horizontal-align:middle;
+}
+.testing{
+	grid-area:four;
+}
+
+.stories{
+	grid-area:five;
+}
+
+.stories{
+	display: flex;
+	grid-template-rows: auto auto;
+	text-align: centre;
+}
+
+.article-body{
+	grid-area:six;
+}
+
+.article-body{
+	display: grid;
+	flex-wrap: wrap;
+	float:right;
+}
+.stories img{
+	display:flex;
+	grid-template-rows:auto auto;
+	position: relative;
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+	border-radius: 50%;
+}
+
+.newsletter{
+	grid-area: seven;
+	background-color: #48BB78;
+	color: white;
+}
+
+footer.container{
+	grid-area:eight;
+	background-color: 4A5568;
+}
+
+header {
+	background-color: white;
+	font-size: 16px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  color: #6b7280;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  color: #6b7280;
+}
+li a:hover{
+	background-color: #5A67D8;
+}
+
+header h1 {
+	float: left;
+}
+
+header ul {
+	float: right;
+}
+
+h2 p{
+	float: left;
+}
+
+.testing a{
+	display: block;
+	background-color: green;
+	color: white;
+	padding: 10px;
+	align: center;
+}
+
+.overview-hero {
+	background-color: #D3D3D3;
+
+}
+
+.testing{
+	background-color: gray;
+	color: white;
+}
+.learn-about h2{
+	font-size: 24px;
+	color: #48BB78
 }

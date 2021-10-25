@@ -81,31 +81,26 @@ img{
 	grid-area:five;
 }
 
-.stories{
-	display: flex;
-	grid-template-rows: auto auto;
-	text-align: centre;
-}
-
 .article-body{
 	grid-area:six;
 }
 
 .article-body{
-	display: grid;
+	display: flex;
 	flex-wrap: wrap;
-	float:right;
-}
-.stories img{
-	display:flex;
-	grid-template-rows:auto auto;
-	position: relative;
-	width: 200px;
-	height: 200px;
-	overflow: hidden;
-	border-radius: 50%;
 }
 
+.stories img{
+	width: 250px;
+	height: auto;
+	overflow: hidden;
+	border-radius: 50%;
+	float: left;
+}
+
+.article-body p{
+	float: right;
+}
 .newsletter{
 	grid-area: seven;
 	background-color: #48BB78;

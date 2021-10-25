@@ -81,6 +81,15 @@ img{
 	grid-area:five;
 }
 
+.stories{
+	display:flex;
+    flex-wrap: wrap;
+    background-color: white;
+    padding: 10px;
+    border: 20px;
+    margin: 40px;
+}
+
 .article-body{
 	grid-area:six;
 }
